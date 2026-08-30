@@ -1,14 +1,14 @@
-# Core LLM + LangChain ecosystem
+# Core LLM + LangChain ecosystem LLM for building the agents and tools
 langchain>=0.2.0
 langchain-core>=0.2.0
 langchain-community>=0.2.0
 langchain-google-genai>=1.0.0
 
 
-# Tavily Search Tool
+# Tavily Search Tool for fetching information from the web and scraping
 tavily-python>=0.3.0
 
-# Web scraping
+# Web scraping beautiful soup and requests
 beautifulsoup4>=4.12.0
 requests>=2.31.0
 lxml>=5.0.0
