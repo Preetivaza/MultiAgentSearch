@@ -6,7 +6,9 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from tools import web_search, scrape_url
 
-
+# agents.py — Builds agents using langgraph.
+# ── Load environment 
+# this is dotenv file which is used to load environment variables  like API keys, secrets, etc. ─────────────────────────────────────────────────────
 load_dotenv(override=True)
 
 # Model setup using Google Gemini
