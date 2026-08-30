@@ -1,14 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 from langchain_core.tools import tool
-from duckduckgo_search import DDGS
+from tavily import TavilyClient
 
 
 @tool
 def web_search(query: str) -> str:
     """Search the web for recent and reliable information on a topic. Returns titles, URLs, and snippets."""
     try:
-        results = DDGS().text(query, max_results=5)
+        results = TavilyClient(api_key="tavily-app-sN2l7Nf2YqA9yWvV0z8P1R4T5U6V7W8").search(query=query, count=5)
         out = []
         for r in results:
             out.append(f"Title: {r.get('title', '')}\nURL: {r.get('href', '')}\nSnippet: {r.get('body', '')}\n")
