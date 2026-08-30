@@ -1,88 +1,65 @@
 # ResearchMind - Multi-Agent AI System 🔬
 
-ResearchMind is a powerful, multi-agent artificial intelligence system designed to automate comprehensive research tasks. Built with **Streamlit**, **LangChain**, **LangGraph**, and powered by **Google Gemini** models, this application orchestrates specialized AI agents to gather information, scrape deep content, draft structured reports, and provide critical feedback on any given topic.
+ResearchMind is a powerful, multi-agent artificial intelligence system designed to automate comprehensive research tasks. Built with **Streamlit**, **LangChain**, and powered by **Google Gemini** models, this application orchestrates specialized AI agents to gather information, scrape deep content, draft structured reports, and provide critical feedback on any given topic.
 
-## 🌟 Features
+## ✨ What It Does
 
-ResearchMind utilizes a four-step pipeline to deliver high-quality research reports:
+The app works in 4 simple steps to give you a great report:
 
-1.  **🔍 Search Agent**: Utilizes web search tools (like Tavily) to scour the internet for recent, reliable, and detailed information about the user-provided topic.
-2.  **📄 Reader Agent**: Analyzes search results to identify the most relevant URLs and scrapes them for in-depth content extraction.
-3.  **✍️ Writer Chain**: Synthesizes the gathered research into a structured, detailed, and professional markdown report, including an introduction, key findings, conclusion, and a list of sources.
-4.  **🧐 Critic Chain**: Acts as a rigorous reviewer, evaluating the drafted report to provide a score out of 10, highlighting strengths, suggesting areas for improvement, and giving a final verdict.
+1. **🔍 Search**: The AI searches the internet to find the newest and best information on your topic.
+2. **📄 Read**: It picks the best website from the search and reads the full article to get the deep details.
+3. **✍️ Write**: The AI takes all the information and writes a clear, organized report for you.
+4. **🧐 Check (Critic)**: Another AI checks the report, gives it a score out of 10, and tells you what is good and what can be better.
 
-## 🛠️ Tech Stack
+## 🛠️ What We Used to Build It
 
-*   **Frontend UI**: [Streamlit](https://streamlit.io/) with custom CSS for a modern, sleek interface.
-*   **LLM Framework**: [LangChain](https://www.langchain.com/) & [LangGraph](https://www.langchain.com/langgraph)
-*   **AI Models**: Google Gemini (`gemini-1.5-pro` via `langchain-google-genai`)
-*   **Web Search & Scraping**: `tavily-python`, `beautifulsoup4`, `requests`
-*   **Environment Management**: `python-dotenv`
+* **Website**: Streamlit (makes the app look nice and easy to use).
+* **AI Brain**: Google Gemini (`gemini-1.5-pro`).
+* **AI Manager**: LangChain and LangGraph (connects the AI steps together).
+* **Web Search Tool**: Tavily API and BeautifulSoup (to search and read websites).
 
-## 🚀 Getting Started
+## 🚀 How to Run It on Your Computer
 
-### Prerequisites
+### What You Need
+* Python installed on your computer.
+* A Google Gemini API Key (to use the AI).
 
-*   Python 3.8+
-*   Google Gemini API Key
-*   Tavily API Key (for web search tool capabilities)
+### Setup Steps
 
-### Installation
+1. **Download the project files** to your computer.
+2. **Open your terminal** and go to the project folder.
+3. **Install the required tools** by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Add your API Key**: Create a file named `.env` in the main folder and add your Google API key like this:
+   ```env
+   GOOGLE_API_KEY=your_google_api_key_here
+   ```
+   *(Note: The Tavily search key is already set up in `tools.py`)*
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/Multi-agent-research-system.git
-    cd Multi-agent-research-system
-    ```
+### Start the App
 
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    # On Windows:
-    venv\Scripts\activate
-    # On macOS/Linux:
-    source venv/bin/activate
-    ```
-
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Configure Environment Variables:**
-    Create a `.env` file in the root directory and add your API keys:
-    ```env
-    GOOGLE_API_KEY=your_google_gemini_api_key_here
-    TAVILY_API_KEY=your_tavily_api_key_here
-    ```
-
-### Running the Application
-
-Execute the following command to start the Streamlit server:
+Run this command in your terminal to start the website:
 
 ```bash
 streamlit run app.py
 ```
 
-The application will be accessible in your web browser, typically at `http://localhost:8501`.
+The app will open in your web browser!
 
-## 💡 How to Use
+## 💡 How to Use the App
 
-1.  Open the ResearchMind web application.
-2.  Enter your desired research topic in the input field (e.g., "Quantum computing breakthroughs in 2025").
-3.  Click the **"⚡ Run Research Pipeline"** button.
-4.  Watch the pipeline progress through the Search, Reader, Writer, and Critic stages.
-5.  Once complete, view the final research report and the critic's feedback.
-6.  You can download the generated report as a Markdown (`.md`) file.
+1. Open the app in your browser.
+2. Type a topic you want to learn about in the box (for example, "Latest electric cars 2025").
+3. Click the **"⚡ Run Research Pipeline"** button.
+4. Watch the AI do the work! It will show you the search results, what it read, and the final report.
+5. You can click a button to download the finished report to your computer.
 
-## 📂 Project Structure
+## 📂 Files in This Project
 
-*   `app.py`: The main Streamlit application script containing the UI and pipeline execution logic.
-*   `agents.py`: Defines the LangChain models, React agents (Search, Reader), and Prompt Chains (Writer, Critic).
-*   `tools.py`: (Assumed) Contains the custom tools `web_search` and `scrape_url` used by the agents.
-*   `requirements.txt`: Lists all Python dependencies required for the project.
-*   `.env`: Configuration file for storing environment variables and API keys.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
+* `app.py`: The main website code and how it looks.
+* `pipeline.py`: A script to run the research process in your terminal instead of the website.
+* `agents.py`: The instructions for the AI agents (Search, Read, Write, Check).
+* `tools.py`: The tools the AI uses to search and read the internet.
+* `requirements.txt`: The list of Python tools you need to install.
