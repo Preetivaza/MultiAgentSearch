@@ -5,6 +5,7 @@ def run_research_pipeline(topic : str) -> dict:
     state = {}
 
     #search agent working 
+    # here we are using the search agent to search the web for the topic
     print("\n"+" ="*50)
     print("step 1 - search agent is working ...")
     print("="*50)
@@ -18,6 +19,7 @@ def run_research_pipeline(topic : str) -> dict:
     print("\n search result ",state['search_results'])
 
     #step 2 - reader agent 
+    # here we are using the reader agent to scrape the top resources from the search results
     print("\n"+" ="*50)
     print("step 2 - Reader agent is scraping top resources ...")
     print("="*50)
@@ -36,6 +38,7 @@ def run_research_pipeline(topic : str) -> dict:
     print("\nscraped content: \n", state['scraped_content'])
 
     #step 3 - writer chain 
+    # now we are using the writer chain to write the report 
 
     print("\n"+" ="*50)
     print("step 3 - Writer is drafting the report ...")
@@ -53,7 +56,8 @@ def run_research_pipeline(topic : str) -> dict:
 
     print("\n Final Report\n",state['report'])
 
-    #critic report 
+    #critic report
+    # now we are using the critic chain to review the report 
 
     print("\n"+" ="*50)
     print("step 4 - critic is reviewing the report ")
