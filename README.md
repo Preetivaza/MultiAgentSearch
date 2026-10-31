@@ -23,23 +23,23 @@ It also provides an interactive Streamlit dashboard, a FastAPI backend, and an e
 
 ## ✨ Key Capabilities
 
-- 🧠 Research Planning & Execution:
-- Decomposes complex queries into focused research subquestions using structured Pydantic outputs and executes independent research tasks concurrently using `ThreadPoolExecutor`.
+🧠 Research Planning & Execution:
+ Decomposes complex queries into focused research subquestions using structured Pydantic outputs and executes independent research tasks concurrently using `ThreadPoolExecutor`.
 
-- 📚 Evidence Collection & Verification:
-- Collects and deduplicates source metadata, extracts atomic factual claims, and verifies them against retrieved source passages to identify unsupported or contradictory information.
+ 📚 Evidence Collection & Verification:
+ Collects and deduplicates source metadata, extracts atomic factual claims, and verifies them against retrieved source passages to identify unsupported or contradictory information.
 
-- 🔗 Report Generation & Citation Auditing:
-- Generates structured research reports, validates source references, and calculates citation integrity scores to ensure evidence-backed reporting.
+ 🔗 Report Generation & Citation Auditing:
+ Generates structured research reports, validates source references, and calculates citation integrity scores to ensure evidence-backed reporting.
 
-- 🔄 Automated Review & Revision:
-- Evaluates report coverage, evidence quality, citations, and contradictions, then applies targeted revisions using reviewer feedback within a configurable      iteration limit.
+ 🔄 Automated Review & Revision:
+ Evaluates report coverage, evidence quality, citations, and contradictions, then applies targeted revisions using reviewer feedback within a configurable      iteration limit.
 
-- 📊 Evaluation & Observability:
-- Measures claim support, citation validity, task completion, execution latency, and token consumption to assess research quality and performance.
+ 📊 Evaluation & Observability:
+ Measures claim support, citation validity, task completion, execution latency, and token consumption to assess research quality and performance.
 
-- 🖥️ Dashboard & API Integration:
--  Provides interactive execution monitoring, evidence inspection, claim verification, and report exports through Streamlit, with research execution and management endpoints powered by FastAPI.
+ 🖥️ Dashboard & API Integration:
+  Provides interactive execution monitoring, evidence inspection, claim verification, and report exports through Streamlit, with research execution and management   endpoints powered by FastAPI.
 
 ---
 
