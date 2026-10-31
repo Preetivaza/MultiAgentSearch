@@ -1,8 +1,6 @@
 # 🔬 ResearchMind
 ### Multi-Agent AI Research & Evidence Verification System
 
-**From complex research questions to evidence-backed, auditable insights.**
-
 ResearchMind is an intelligent multi-agent research platform built using **Python, LangGraph, LangChain, and Google Gemini**. It automates the research lifecycle through intelligent query decomposition, parallel web research, evidence collection, factual claim verification, citation auditing, and automated report generation.Unlike a conventional LLM-powered research assistant, ResearchMind introduces a structured verification and quality-assurance pipeline. Every extracted factual claim is evaluated against retrieved source evidence, while generated reports undergo automated peer review and targeted revisions.
 It also provides an interactive Streamlit dashboard, a FastAPI backend, and an evaluation framework for measuring research quality and execution performance.
 
