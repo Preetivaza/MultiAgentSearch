@@ -23,8 +23,6 @@ It also provides an interactive Streamlit dashboard, a FastAPI backend, and an e
 
 ## ✨ Key Capabilities
 
-## ✨ Key Capabilities
-
 - 🧠 Research Planning & Execution:
 - Decomposes complex queries into focused research subquestions using structured Pydantic outputs and executes independent research tasks concurrently using `ThreadPoolExecutor`.
 
