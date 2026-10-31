@@ -25,17 +25,25 @@ It also provides an interactive Streamlit dashboard, a FastAPI backend, and an e
 
 ## ✨ Key Capabilities
 
-- 🧠 **Intelligent Planning:** Converts complex queries into 2–5 focused research subquestions using structured Pydantic outputs.
-- ⚡ **Parallel Research:** Executes independent research tasks concurrently using `ThreadPoolExecutor`.
-- 📚 **Evidence Management:** Collects, preserves, and deduplicates source metadata and excerpts.
-- 🔍 **Claim Verification:** Extracts atomic claims and checks them against retrieved source passages.
-- 🛡️ **Hallucination Detection:** Identifies unsupported statements, contradictory evidence, and invalid source references.
-- 🔗 **Citation Auditing:** Validates source IDs and calculates citation integrity scores.
-- 📝 **Automated Peer Review:** Evaluates report coverage, evidence quality, citations, and contradictions.
-- 🔄 **Self-Revision Workflow:** Uses reviewer feedback to revise specific report sections within a configurable iteration limit.
-- 📊 **Evaluation Framework:** Measures claim support, citation validity, task completion, latency, and token usage.
-- 🖥️ **Interactive Dashboard:** Provides execution tracking, evidence inspection, verification matrices, and report exports.
-- 🔌 **REST API:** Exposes research execution and report management through FastAPI.
+## ✨ Key Capabilities
+
+- 🧠 **Research Planning & Execution:
+- ** Decomposes complex queries into focused research subquestions using structured Pydantic outputs and executes independent research tasks concurrently using `ThreadPoolExecutor`.
+
+- 📚 **Evidence Collection & Verification:
+- ** Collects and deduplicates source metadata, extracts atomic factual claims, and verifies them against retrieved source passages to identify unsupported or contradictory information.
+
+- 🔗 **Report Generation & Citation Auditing:
+- ** Generates structured research reports, validates source references, and calculates citation integrity scores to ensure evidence-backed reporting.
+
+- 🔄 **Automated Review & Revision:
+- ** Evaluates report coverage, evidence quality, citations, and contradictions, then applies targeted revisions using reviewer feedback within a configurable iteration limit.
+
+- 📊 **Evaluation & Observability:
+- ** Measures claim support, citation validity, task completion, execution latency, and token consumption to assess research quality and performance.
+
+- 🖥️ **Dashboard & API Integration:
+- ** Provides interactive execution monitoring, evidence inspection, claim verification, and report exports through Streamlit, with research execution and management endpoints powered by FastAPI.
 
 ---
 
