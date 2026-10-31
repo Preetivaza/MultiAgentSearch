@@ -1,0 +1,67 @@
+[
+  {
+    "id": "BENCH-001",
+    "domain": "Artificial Intelligence",
+    "query": "How does test-time compute scaling improve reasoning capabilities in modern LLMs compared to pre-training scaling laws?",
+    "difficulty": "Advanced",
+    "required_subquestions_count": 3,
+    "key_evaluation_aspects": [
+      "Inference-time search and Monte Carlo tree search",
+      "Process reward models vs outcome reward models",
+      "Empirical benchmark gains on mathematical olympiad problems",
+      "Inference latency and hardware compute cost tradeoffs"
+    ]
+  },
+  {
+    "id": "BENCH-002",
+    "domain": "Quantum Computing",
+    "query": "What are the latest fault-tolerant quantum computing breakthroughs and topological qubit architectures in 2024-2025?",
+    "difficulty": "Advanced",
+    "required_subquestions_count": 3,
+    "key_evaluation_aspects": [
+      "Majorana zero modes and topological surface codes",
+      "Physical qubit scaling vs logical qubit thresholds",
+      "Commercial benchmarks from IBM, Google, and Quantinuum",
+      "Cryogenic engineering and phase-flip error mitigation"
+    ]
+  },
+  {
+    "id": "BENCH-003",
+    "domain": "Biotechnology",
+    "query": "What are the current clinical trial results and delivery mechanism bottlenecks for CRISPR prime editing in 2025?",
+    "difficulty": "Intermediate",
+    "required_subquestions_count": 3,
+    "key_evaluation_aspects": [
+      "Prime editing off-target insertion and deletion rates",
+      "Lipid nanoparticle (LNP) vs viral vector delivery",
+      "In vivo clinical trial efficacy milestones",
+      "Immunogenicity and regulatory approval hurdles"
+    ]
+  },
+  {
+    "id": "BENCH-004",
+    "domain": "Clean Energy",
+    "query": "What are the recent net-energy gain milestones and magnetic confinement engineering challenges in nuclear fusion research?",
+    "difficulty": "Intermediate",
+    "required_subquestions_count": 3,
+    "key_evaluation_aspects": [
+      "Q-factor milestones at NIF and tokamak facilities",
+      "High-temperature superconducting (HTS) magnets",
+      "Plasma turbulence control and divertor heat exhaust",
+      "Tritium breeding and commercial grid integration timelines"
+    ]
+  },
+  {
+    "id": "BENCH-005",
+    "domain": "Autonomous Systems",
+    "query": "What are the architectural paradigms and state-synchronization challenges in cyclic multi-agent AI research systems?",
+    "difficulty": "Advanced",
+    "required_subquestions_count": 3,
+    "key_evaluation_aspects": [
+      "Graph-based state coordination (LangGraph vs procedural pipelines)",
+      "Fact-checking loops and claim-level contradiction resolution",
+      "Concurrent tool dispatch and source deduplication",
+      "Iterative revision loop termination and loop prevention"
+    ]
+  }
+]

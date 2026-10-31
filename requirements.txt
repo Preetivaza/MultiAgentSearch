@@ -3,6 +3,9 @@ langchain>=0.2.0
 langchain-core>=0.2.0
 langchain-community>=0.2.0
 langchain-google-genai>=1.0.0
+langgraph>=0.2.0
+pytest>=7.4.0
+
 
 
 # Tavily Search Tool for fetching information from the web and scraping
@@ -39,3 +42,8 @@ pydantic>=2.5.0
 
 # Optional (for advanced parsing / HTML cleanup)
 html5lib>=1.1
+
+# Web Dashboard & Backend API
+streamlit>=1.30.0
+fastapi>=0.109.0
+uvicorn>=0.27.0
